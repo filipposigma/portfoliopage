@@ -1,0 +1,62 @@
+.site-grid {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+}
+
+.left-column {
+  grid-column: 3 / span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.right-column {
+  grid-column: 8 / span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.text--title {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Text";
+  src: url("fonts/NHGTPFontRwebb.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Neue Haas Grotesk Text", Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 25.5px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.main {
+  padding-top: 25px;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* controls the space between the two lines */
+}
